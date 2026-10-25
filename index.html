@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Snake Retro</title>
+
+    <link rel="stylesheet" href="public/style.css">
+
+</head>
+
+<body>
+
+    <!-- SPLASH SCREEN -->
+    <div id="splashScreen">
+
+        <div class="splash-content">
+
+            <h1>SNAKE RETRO</h1>
+
+            <div class="snake-icon">
+                🐍
+            </div>
+
+            <h3>6 Maps Unlock Edition</h3>
+
+            <p>Press Any Key To Continue</p>
+
+        </div>
+
+    </div>
+
+    <!-- MENU -->
+    <div id="menuScreen">
+
+        <h1>SNAKE RETRO</h1>
+
+        <button id="playBtn">
+            START GAME
+        </button>
+        <button id="resetBtn">
+            RESET PROGRESS
+        </button>
+
+        <div class="menu-image">
+
+            <img src="public/snake.png" alt="Snake Retro">
+
+        </div>
+
+        <p class="subtitle">
+            6 Maps Unlock Edition
+        </p>
+
+    </div>
+
+
+    <!-- MAP -->
+    <div id="mapScreen" class="hidden">
+
+        <h2>SELECT MAP</h2>
+
+        <button id="backToMenuBtn">
+            BACK
+        </button>
+
+        <div id="mapContainer"></div>
+
+    </div>
+
+    <!-- SPEED SCREEN -->
+    <div id="speedScreen" class="hidden">
+
+        <h2>SELECT SPEED</h2>
+
+        <p id="mapInfo"></p>
+
+        <button id="backToMapBtn">
+            BACK
+        </button>
+
+        <button id="slowBtn">
+            SLOW
+        </button>
+
+        <button id="mediumBtn">
+            MEDIUM
+        </button>
+
+        <button id="fastBtn">
+            FAST
+        </button>
+
+    </div>
+
+    <!-- GAME -->
+    <div id="gameScreen" class="hidden">
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="game-buttons">
+
+            <button id="pauseBtn">
+                PAUSE
+            </button>
+
+        </div>
+
+        <h3 id="scoreText">
+            Score : 0
+        </h3>
+
+    </div>
+
+    <div id="pauseScreen" class="hidden">
+
+        <div class="pause-box">
+
+            <h2>GAME PAUSED</h2>
+
+            <button id="resumeBtn">
+                RESUME
+            </button>
+
+            <button id="restartBtn">
+                RESTART
+            </button>
+
+            <button id="pauseMenuBtn">
+                BACK TO MENU
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- GAME OVER POPUP -->
+    <div id="gameOverPopup" class="hidden">
+
+        <div class="popupBox">
+
+            <h1>GAME OVER</h1>
+
+            <p id="finalScore">Score : 0</p>
+
+            <div class="popupButton">
+
+                <button id="restartPopupBtn">
+                    RESTART
+                </button>
+
+                <button id="menuPopupBtn">
+                    MENU
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="public/audio.js"></script>
+    <script src="public/storage.js"></script>
+    <script src="public/unlock.js"></script>
+    <script src="public/maps.js"></script>
+    <script src="public/menu.js"></script>
+    <script src="public/game.js"></script>
+
+    <script src="public/splash.js"></script>
+    <script src="public/storage.js"></script>
+    <script src="public/unlock.js"></script>
+    <script src="public/maps.js"></script>
+    <script src="public/menu.js"></script>
+    <script src="public/game.js"></script>
+    <script src="public/splash.js"></script>
+
+</body>
+
+</html>

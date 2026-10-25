@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    background: #93b64b;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    color: #222;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#mapContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 500px;
+    margin: auto;
+}
+
+.mapCard {
+    background: #b9d46d;
+    padding: 20px;
+    border: 3px solid #333;
+    cursor: pointer;
+}
+
+.locked {
+    background: #666;
+    color: white;
+    cursor: not-allowed;
+}
+
+canvas {
+    border: 4px solid black;
+    background: #c7df7c;
+    margin-top: 20px;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #93b64b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+#pauseScreen {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 999;
+
+}
+
+.pause-box {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+}
+
+.hidden {
+
+    display: none !important;
+
+}
+
+/* ========================= */
+/* SPLASH SCREEN */
+/* ========================= */
+
+#splashScreen {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #93b64b;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+}
+
+.splash-content {
+
+    text-align: center;
+
+}
+
+.splash-content h1 {
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+
+    color: #222;
+
+}
+
+.snake-icon {
+
+    font-size: 100px;
+
+    animation: floatSnake 1s infinite alternate;
+
+}
+
+.splash-content h3 {
+
+    margin-top: 20px;
+
+}
+
+.splash-content p {
+
+    margin-top: 30px;
+
+    font-weight: bold;
+
+    animation: blink 1s infinite;
+
+}
+
+@keyframes blink {
+
+    50% {
+
+        opacity: 0;
+
+    }
+
+}
+
+@keyframes floatSnake {
+
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+
+}
+
+.menu-image {
+
+    margin-top: 40px;
+
+}
+
+.menu-image img {
+
+    width: 300px;
+
+    height: auto;
+
+}
+
+.subtitle {
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+/* =======================
+   GAME OVER POPUP
+======================= */
+
+#gameOverPopup{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.65);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.popupBox{
+
+    width:350px;
+
+    background:#93b64b;
+
+    border:5px solid black;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 0 20px black;
+
+}
+
+.popupBox h1{
+
+    margin-bottom:20px;
+
+    color:#222;
+
+}
+
+.popupBox p{
+
+    font-size:22px;
+
+    margin-bottom:25px;
+
+}
+
+.popupButton{
+
+    display:flex;
+
+    justify-content:space-around;
+
+}
+
+.popupButton button{
+
+    width:120px;
+
+    padding:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
